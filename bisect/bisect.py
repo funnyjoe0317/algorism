@@ -12,3 +12,5 @@ def binary_search(target, data):
         else:
             end = mid-1
     return None
+
+from bisect import bisect
