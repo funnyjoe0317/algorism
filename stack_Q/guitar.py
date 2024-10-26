@@ -1,15 +1,15 @@
 import sys
 
 # 첫 번째 줄: 멜로디에 포함된 음의 수 N과 한 줄에 있는 프렛의 수 P 입력
-# N, P = map(int, sys.stdin.readline().split())
+N, P = map(int, sys.stdin.readline().split())
 
-# # 각 음의 줄 번호와 프렛 번호를 저장할 리스트
-# melody = []
+# 각 음의 줄 번호와 프렛 번호를 저장할 리스트
+melody = []
 
-# # N개의 음을 입력받아서 리스트에 저장
-# for _ in range(N):
-#     line, fret = map(int, sys.stdin.readline().split())
-#     melody.append((line, fret))
+# N개의 음을 입력받아서 리스트에 저장
+for _ in range(N):
+    line, fret = map(int, sys.stdin.readline().split())
+    melody.append((line, fret))
 
 # melody 리스트에 모든 음이 (줄 번호, 프렛 번호)로 저장됨
 # 5 15
@@ -19,9 +19,9 @@ import sys
 # 2 10
 # 2 5
 
-N, P  = 7, 15
-melody = [(1, 5), (2, 3), (2, 5), (2, 7), (2, 4), (1, 5), (1, 3)]
-cnt = 0
+# N, P  = 7, 15
+# melody = [(1, 5), (2, 3), (2, 5), (2, 7), (2, 4), (1, 5), (1, 3)]
+# cnt = 0
 dic = {}
 # for i in range(N-1):
 #     if melody[i][0] not in dic:
